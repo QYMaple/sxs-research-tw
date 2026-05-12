@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杖劍傳說 - 楓琴柚</title>
+    
+    <link rel="icon" type="image/webp" href="https://cdn.discordapp.com/icons/1457142172104261826/6a23e827ada903f225b1877377d4587b.webp?size=32">
+    
+    <script data-goatcounter="https://qymaple.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    
+    <style>
+    body {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f5f5f7;
+        /* 移除点击时的蓝色高亮（移动端优化） */
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: #1d1d1f;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+    }
+
+    .btn-card {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        margin-bottom: 15px;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        box-sizing: border-box;
+        overflow: hidden;
+        transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
+    }
+
+    .btn-card:active {
+        transform: scale(0.98);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    }
+
+    .btn-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-right: 15px;
+        flex-shrink: 0;
+        background-color: white;
+    }
+
+    .btn-text {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #1d1d1f;
+        text-align: left;
+    }
+
+    .btn-card-multiple {
+        cursor: default !important;
+    }
+    .btn-links-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: center;
+        gap: 8px;
+        margin-left: auto;
+        max-width: 180px;
+    }
+
+    .sub-link {
+        width: 80px;
+        padding: 8px 0;
+        background: #f5f5f7;
+        color: #0071e3;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+    .sub-link:active {
+        transform: scale(0.95);
+        background: #e8e8ed;
+    }
+    
+    .footer {
+        margin-top: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        font-size: 0.85rem;
+        color: #86868b;
+    }
+    .footer a {
+        color: #bb271a;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>杖劍傳說查詢表</h1>
+        
+        <a class="btn-card" href="https://ggl.link/fqy-sxs-timeline">
+            <img class="btn-img" src="https://media.discordapp.net/attachments/1468015552772706420/1468015553779204136/2026-02-02_4.49.09.png?ex=6a0305c6&is=6a01b446&hm=f660d38b94402cf15d5c90f7750a247f3a94db7769ff90af9342444323c375eb&=&format=webp&quality=lossless&width=1076&height=768" alt="icon">
+            <div class="btn-text">賽季時間線</div>
+        </a>
+
+        <div class="btn-card btn-card-multiple">
+            <img class="btn-img" src="https://media.discordapp.net/attachments/1485032365024870661/1485032365612077248/2026-01-29_3.46.02.png?ex=6a03a02a&is=6a024eaa&hm=a2408e1b82e9f47c168c41357ff33b0253deb09524b6ab743e61431a7544f44a&=&format=webp&quality=lossless&width=1448&height=1108" alt="icon">
+        
+            <div class="btn-text" style="flex-grow: 1;">星象合約</div>
+        
+            <div class="btn-links-group">
+                <a class="sub-link" href="https://ggl.link/fqy-astral-s1-s3">S1~S3</a>
+                <a class="sub-link" href="https://ggl.link/fqy-astral-s4-s6">S4~S6</a>
+                <a class="sub-link" href="#">S7~S9</a>
+                <a class="sub-link" href="#">S10~S11</a>
+            </div>
+        </div>
+
+        <a class="btn-card" href="https://ggl.link/fqy-mibao-hunt">
+            <img class="btn-img" src="https://media.discordapp.net/attachments/1495901437056651274/1503544067890614302/2026-205-11_6.31.20.png?ex=6a03bc08&is=6a026a88&hm=cb206cba923a739b0409e0e698ff46f885a008b1976df40f01a69586aec4f740&=&format=webp&quality=lossless&width=400&height=400" alt="icon">
+            <div class="btn-text">秘寶大作戰時間線e</div>
+        </a>
+
+        <a class="btn-card" href="#">
+            <img class="btn-img" src="https://media.discordapp.net/attachments/1495901437056651274/1503544106855563374/2026-051-11_6.31.20.png?ex=6a03bc11&is=6a026a91&hm=4cad6a4f05a7cf866ca54e923b75aecc14c6514841501b7fb02b5ebdfedf6254&=&format=webp&quality=lossless&width=400&height=400" alt="icon">
+            <div class="btn-text">全國度特殊屬性遺物</div>
+        </a>
+
+        <a class="btn-card" href="#">
+            <img class="btn-img" src="https://media.discordapp.net/attachments/1495901437056651274/1503544130012450966/2026-05-11_6.31.20.png?ex=6a03bc17&is=6a026a97&hm=1b73785238f4b12f8c690d4c473df5a929accc3d972612e3adda4b50510067f0&=&format=webp&quality=lossless&width=400&height=400" alt="icon">
+            <div class="btn-text">夥伴屬性彙總</div>
+        </a>
+
+        <a class="btn-card" href="https://ggl.link/fqy-class-change">
+            <img class="btn-img" src="https://media.discordapp.net/attachments/1485011860708393031/1485011861278691338/2026-03-21_3.26.46.png?ex=6a038d11&is=6a023b91&hm=510da929c3cdd89c2374c592577dda4eddbad1b04c0a0caa6bf6d4e891b10d21&=&format=webp&quality=lossless&width=640&height=700" alt="icon">
+            <div class="btn-text">轉職技能轉換表</div>
+        </a>
+
+        <a class="btn-card" href="https://discord.gg/sH6uN63Nwf">
+            <img class="btn-img" src="https://cdn.discordapp.com/icons/1457142172104261826/6a23e827ada903f225b1877377d4587b.webp?size=160&quality=lossless" alt="icon">
+            <div class="btn-text" style="color: #5865F2;">歡迎加入楓琴柚Discord</div>
+        </a>
+        
+        <div class="footer">
+            <span>Made by</span>
+            <a href="https://discord.gg/sH6uN63Nw"f>楓琴柚</a>
+        </div>
+    </div>
+</body>
+</html>
