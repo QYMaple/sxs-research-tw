@@ -49,13 +49,13 @@
     }
 
     .header-container {
-        position: relative;
         display: flex;
-        align-items: center;
+        flex-direction: row; 
+        align-items: baseline; /* 讓標題和 EN 的文字底部對齊 */
         justify-content: center;
         width: 100%;
         margin-bottom: 2rem;
-        padding-top: 20px; /* 增加頂部間距 */
+        gap: 16px; /* 這裡控制「標題」和「EN」之間的距離，數字越大隔越開 */
     }
 
     h1 {
@@ -64,37 +64,18 @@
         color: #1d1d1f;
         font-weight: 700;
         letter-spacing: -0.5px;
-        text-align: center;
     }
 
     .lang-switch {
-        position: absolute;
-        right: 20px; /* 按鈕靠右對齊，並留有邊距 */
-        background-color: white;
-        border: 1px solid #d2d2d7;
-        color: #1d1d1f;
-        padding: 4px 15px; /* 增加 padding 以容納長文本和箭頭 */
-        border-radius: 8px;
-        font-size: 0.85rem;
+        font-size: 0.85rem; /* 讓 EN 字體明顯更小 */
+        color: #86868b; /* 灰色純文字質感 */
         font-weight: 600;
-        text-decoration: none;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-        display: flex;
-        align-items: center;
-        gap: 8px; /* 文字和箭頭之間的間距 */
-        transition: all 0.2s ease;
-    }
-
-    /* 如果你需要自定義箭頭顏色或大小，可以使用 svg 標籤或 class */
-    .lang-switch svg {
-        fill: #1d1d1f;
-        width: 1rem;
-        height: 1rem;
+        text-decoration: none; /* 移除底線 */
+        transition: opacity 0.2s ease;
     }
 
     .lang-switch:active {
-        transform: scale(0.95); /* 點擊時的縮放動畫 */
-        background-color: #f5f5f7;
+        opacity: 0.5; /* 點擊時的微透明回饋感 */
     }
 
     .btn-card {
@@ -187,7 +168,7 @@
     <div class="container">
         <div class="header-container">
             <h1>杖劍傳說查詢表</h1>
-            <a href="https://qymaple.github.io/sxs-research-global" class="lang-switch">國語 ⇌ English</a>
+            <a href="https://qymaple.github.io/sxs-research-global" class="lang-switch">EN</a>
         </div>
         
         <a class="btn-card" href="fqy-sxs-timeline.html">
