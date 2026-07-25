@@ -52,6 +52,21 @@
       z-index: 100;
       position: relative;
     }
+    
+    /* 新增：Logo 尺寸鎖定，防止撐爆版面 */
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .nav-logo img {
+      height: 32px !important;
+      width: auto !important;
+      display: block !important;
+    }
 
     /* 按鈕基礎樣式 */
     .nav-btn {
