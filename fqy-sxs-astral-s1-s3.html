@@ -126,18 +126,43 @@
 
   <!-- 頂部切換按鈕區 -->
   <div class="nav-bar">
-    <button class="nav-btn active" onclick="switchSheet('https://docs.google.com/spreadsheets/d/e/2PACX-1vR5j5ixmZvvwt6xyHTG9WmKMYaobu_8nC2fbACE5X4yetxBp_a09Mfdr7ycixR9AOONPc9wb4D7ZlCz/pubhtml?gid=1427729144&single=true', '賽季時間線', this)">
+    <!-- 新增的 Logo 區塊，點擊會回到首頁 -->
+    <a href="index.html" class="nav-logo">
+      <img src="./img/LogoBlack.png" alt="楓琴柚">
+    </a>
+    
+  <!-- 頂部切換按鈕區 -->
+  <div class="nav-bar">
+    <button class="nav-btn" onclick="window.location.href='index.html'">
+      首頁
+    </button>
+    <button class="nav-btn" onclick="window.location.href='fqy-sxs-timeline.html'">
       賽季時間線
     </button>
-    
-    <button class="nav-btn" onclick="switchSheet('替換成表格B的發布URL', '秘寶大作戰', this)">
-      秘寶大作戰
+    <!-- 假設你現在正在編輯 S1~S3 這一頁，就把 active 加在它身上 -->
+    <button class="nav-btn active" onclick="window.location.href='fqy-sxs-astral-s1-s3.html'">
+      原初之星 S1~S3
+    </button>
+    <button class="nav-btn" onclick="window.location.href='fqy-sxs-astral-s4-s6.html'">
+      原初之星 S4~S6
+    </button>
+    <button class="nav-btn" onclick="window.location.href='fqy-sxs-tresurehunt.html'">
+      秘寶大作戰時間線
+    </button>
+    <button class="nav-btn" onclick="window.location.href='fqy-sxs-companions.html'">
+      夥伴圖鑑
+    </button>
+    <button class="nav-btn" onclick="window.location.href='fqy-sxs-specialrelic.html'">
+      特殊遺物
+    </button>
+    <button class="nav-btn" onclick="window.location.href='fqy-sxs-classchange.html'">
+      技能轉換表
     </button>
   </div>
 
   <!-- 嵌入試算表 -->
   <div class="iframe-container">
-    <iframe id="sheet-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR5j5ixmZvvwt6xyHTG9WmKMYaobu_8nC2fbACE5X4yetxBp_a09Mfdr7ycixR9AOONPc9wb4D7ZlCz/pubhtml?gid=1427729144&single=true"></iframe>
+    <iframe id="sheet-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR5j5ixmZvvwt6xyHTG9WmKMYaobu_8nC2fbACE5X4yetxBp_a09Mfdr7ycixR9AOONPc9wb4D7ZlCz/pubhtml?gid=1427729144&single=true&widget=false&chrome=false"></iframe>
   </div>
 
   <!-- JS 邏輯控制與 GA4 數據事件發送 -->
